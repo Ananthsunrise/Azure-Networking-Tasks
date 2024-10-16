@@ -68,4 +68,15 @@ Go to azure portal->search NSG->Click create->here you can give port number,prot
 Go to azure portal->search virtual machines->click 1 vm->go to network setting->click 1 NIC card->here you can attach NSG(If you want to assign NSG to single VM, you can attach it on the NIC card)
 Go to azure portal->search subnet->click 1 subnet->here you can attach NSG(If you want to attach NSG to multiple vm's, you can attach it on the subnet)
 
+Task 11 : **Add Peering Connection between vnets**
 
+Local vnet peering used to communicate resources from one vnet to another vnet in same region
+Global vnet peering used to communicate resources from one vnet to another vnet in different region.
+
+Local peering:
+create 2 vnets in same region and create 2 virtual machines and assign 1 vm in 1 vnet, assign another vm in another vnet.
+Go to azure portal->search virtual networks->select vnet1->select peering connection->click add->give name of peering->select vnet2 to connect peering->click save
+
+global peering:
+create 2 vnets in different region and create 2 virtual machines and assign 1 vm in 1 vnet, assign another vm in another vnet.
+Go to azure portal->search virtual networks->select vnet1->select peering connection->click add->give name of peering->select vnet2 to connect peering->click save
